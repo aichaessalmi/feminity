@@ -1,0 +1,21 @@
+@import './tailwind.css';
+
+@theme {
+  --font-sans: "Inter", "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Supprime les barres de défilement sous les vignettes de couleur */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
